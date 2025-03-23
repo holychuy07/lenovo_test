@@ -1,0 +1,10 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+img {
+    width: 50%; /* Image takes 50% of the container width */
+    height: auto; /* Maintains aspect ratio */
+}

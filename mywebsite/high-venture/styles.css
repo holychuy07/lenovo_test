@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5; /* Light background for contrast */
+}
+
+.header {
+  background: linear-gradient(90deg, #ff8c00, #ff2e63);
+  color: white;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 12px;
+  font-weight: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.nav-container {
+  flex: 1; /* Takes available space */
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.menu li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      height: auto;
+      padding: 15px;
+  }
+
+  .nav-container {
+      justify-content: center;
+      margin-top: 10px;
+  }
+
+  .menu {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+  }
+  
+}
+
+.center-container {
+  display: flex;
+  align-items: center; /* Aligns image and text vertically */
+  justify-content: center; /* Centers everything horizontally */
+  gap: 20px; /* Adds space between image and text */
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-container img {
+  width: 150px; /* Adjust size */
+  height: auto;
+  border-radius: 5px;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+.text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
